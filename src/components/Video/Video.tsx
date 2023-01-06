@@ -1,14 +1,10 @@
 import { IoTrashBin, IoThumbsUp, IoPencil } from "react-icons/io5";
 import { Container, ButtonArea, Button } from "./style";
 
-type VideoProps = {
-    id: string,
-    title: string,
-    link: string,
-    liked: boolean
-}
+import { VideoType } from "../../types/VideoType";
 
-function Video({ id, title, link, liked}: VideoProps) {
+
+function Video({ title, link, liked}: VideoType) {
     return (
         <li>
             <Container>
